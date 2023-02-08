@@ -1,13 +1,16 @@
 h1 {
-    color: blue;
-}
-
-button {
-    color: darkviolet;
-    background-color: tan;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline green;
 }
 
 p {
-    color: white;
-    background-color: grey;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
