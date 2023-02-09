@@ -19,10 +19,10 @@ a {
     text-decoration: none;
 }
 
-span {
-    color: white;
-}
-
 #list2 {
     color: black;
+}
+
+.mark {
+    background-color: red;
 }
