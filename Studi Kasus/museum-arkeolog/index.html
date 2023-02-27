@@ -21,7 +21,7 @@
   </head>
   <body>
     <!---- Navbar Start ---->
-    <nav class="navbar navbar-expand-lg" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">MUSEUM</a>
           <button 
@@ -49,7 +49,7 @@
     <!---- Section Start ---->
     <section class="container-fluid px-0">
 
-      <div class="row align-items-center content">
+      <div class="row align-items-center content" id="home">
         <div class="col-lg-6">
           <div class="text-white text-center d-none d-lg-block" id="title-head">
             <h1>DINO MUSEUM</h1>
@@ -64,11 +64,31 @@
         </div>
       </div>
 
-      <div class="row align-items-center content">
+      <div class="row align-items-center content" id="about">
         <div class="col-md-6 order-2 order-md-1">
           <img class="img-fluid" src="/Studi Kasus/museum-arkeolog/image/bgDino1.jpg" alt="">
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb pt-3">
+              <h2>Museum of Ark</h2>
+              <img src="/Studi Kasus/museum-arkeolog/image/dinoIcon.jpg" height="60" alt="" class="d-none d-lg-inline">
+              <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Quod, dolorum numquam excepturi, nobis illo dolore sint, 
+                recusandae nesciunt adipisci amet laudantium. Enim aperiam 
+                ratione aliquid libero vero. Voluptatem, alias ut!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center content" id="ticket">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="/Studi Kasus/museum-arkeolog/image/bgDino1.jpg" alt="">
+        </div>
+        <div class="col-md-6 text-center">
           <div class="row justify-content-center">
             <div class="col-10 col-lg-8 blurb pt-3">
               <h2>Museum of Ark</h2>
@@ -94,5 +114,15 @@
     
     <!---- Link JQuery Cdn ---->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  
+    <!---- Function tambahan ---->
+    <script>
+      $(function () {
+        $(document).scroll(function() {
+          let $nav = $('#navbar')
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
