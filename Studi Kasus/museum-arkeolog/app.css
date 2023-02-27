@@ -1,5 +1,5 @@
 body {
-    background: #fef3c7;
+    background: #fb923c;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -19,4 +19,16 @@ body {
 #navbar .navbar-brand {
     color: #171717;
     font-size: 1.5rem;
+}
+
+#title-head {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+    #title-head h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
 }
